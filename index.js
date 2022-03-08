@@ -28,7 +28,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\nコース：${course}\n人数：${number}\n氏名：${names}`;
+        var msg = `[希望日]\n${date}\n[コース]\n${course}\n[人数]\n${number}\n[氏名]\n${names}`;
         sendText(msg);
 
         return false;
