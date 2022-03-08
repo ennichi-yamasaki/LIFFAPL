@@ -22,10 +22,10 @@
 
         <p class="mt-3">コース内容</p>
         <div class="form-group">
-            <select id="form-course" class="form-control w-75">
-                <option  name="course">和食コース  3,000円(税込)</option>
-                <option  name="course">洋食コース  5,000円(税込)</option>
-                <option  name="course">中華コース 10,000円(税込)</option>
+            <select name="course" id="form-course" class="form-control w-75">
+                <option>和食コース  3,000円(税込)</option>
+                <option>洋食コース  5,000円(税込)</option>
+                <option>中華コース 10,000円(税込)</option>
             </select>
         </div>
 
