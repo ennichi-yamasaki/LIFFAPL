@@ -30,6 +30,8 @@ $(function () {
             $(e).addClass('is-invalid');
             resultFeild.addClass('invalid-feedback');
             resultFeild.text(e.validationMessage);
+            
+            return false;
           } else {
             // 元の見た目に戻す
             $(e).removeClass('is-invalid');
