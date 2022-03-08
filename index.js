@@ -12,7 +12,7 @@ $(function () {
         var num = $('input[name="number"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
-                `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
+                `<input class="form-control w-50 mt-1" name="name" maxlength="10">`
             );
         }
     });
@@ -20,6 +20,7 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
+        var course = $("#course").text();
         var number = $('input[name="number"]:checked').val();
         var names = '';
         $('#form-name').children().each(function (i, elm) {
@@ -27,7 +28,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}`;
+        var msg = `希望日：${date}\nコース：${course}\n人数：${number}\n氏名：${names}`;
         sendText(msg);
 
         return false;
