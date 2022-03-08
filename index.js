@@ -19,6 +19,25 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
+        // Form内のinput要素を全てチェック
+        $('#submitForm input').each((_, e) => {
+          // メッセージ表示用の要素を予め取得
+          let resultFeild = $(e).next('p');
+
+          // バリデーション実施
+          if (!e.checkValidity()) {
+            // エラー用の見た目に変える
+            $(e).addClass('is-invalid');
+            resultFeild.addClass('invalid-feedback');
+            resultFeild.text(e.validationMessage);
+          } else {
+            // 元の見た目に戻す
+            $(e).removeClass('is-invalid');
+            resultFeild.removeClass('invalid-feedback');
+            resultFeild.text('');
+          }
+        });
+
         var date = $('input[name="date"]').val();
         var course = $("#form-course option:selected").text();
         var number = $('input[name="number"]:checked').val();
