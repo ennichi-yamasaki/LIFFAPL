@@ -22,19 +22,19 @@
 
         <p class="mt-3">人数</p>
         <div id="form-number" class="btn-group btn-group-toggle w-50" data-toggle="buttons">
-            <label class="btn btn-outline-warning">
+            <label class="btn btn-warning">
                 <input type="radio" name="number" value="1" autocomplete="off">1
             </label>
-            <label class="btn btn-outline-warning">
+            <label class="btn btn-warning">
                 <input type="radio" name="number" value="2" autocomplete="off">2
             </label>
-            <label class="btn btn-outline-warning">
+            <label class="btn btn-warning">
                 <input type="radio" name="number" value="3" autocomplete="off">3
             </label>
-            <label class="btn btn-outline-warning">
+            <label class="btn btn-warning">
                 <input type="radio" name="number" value="4" autocomplete="off">4
             </label>
-            <label class="btn btn-outline-warning">
+            <label class="btn btn-warning">
                 <input type="radio" name="number" value="5" autocomplete="off">5
             </label>
         </div>
