@@ -24,7 +24,7 @@ $(function () {
         var number = $('input[name="number"]:checked').val();
         var names = '';
         $('#form-name').children().each(function (i, elm) {
-            names += $(elm).val() + '、';
+            names += $(elm).val() + '様、';
         })
         names = names.slice(0, -1);
 
