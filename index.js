@@ -20,7 +20,7 @@ $(function () {
     // 送信
     $('form').submit(function () {
         var date = $('input[name="date"]').val();
-        var course = $("#course").text();
+        var course = $('input[name="course"]').text();
         var number = $('input[name="number"]:checked').val();
         var names = '';
         $('#form-name').children().each(function (i, elm) {
