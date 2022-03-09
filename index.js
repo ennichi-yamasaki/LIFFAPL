@@ -38,7 +38,8 @@ $(function () {
 
 
     // 閉じる
-    $('form').close(function () {
+    $('form').alert(function () {
         $('#alert').show();
+        return false;
     });
 });
