@@ -12,7 +12,7 @@ $(function () {
         var num = $('input[name="number"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
-                `<input type="text" class="form-control w-50 mt-1" name="name" maxlength="10" required>`
+                `<input type="text" class="form-control w-50 mt-1" name="name" maxlength="10" placeholder="名前を入力" required>`
             );
         }
     });

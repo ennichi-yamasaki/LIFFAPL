@@ -28,11 +28,11 @@
   <button type="button" class="btn btn-warning w-25" id="warn">WARN</button>
 </div>
 
-        <p class="mt-1">以下に来店者様の予約情報を入力し、送信ボタンを押してください。</p>
+        <p class="mt-3">以下に来店者様の予約情報を入力し、送信ボタンを押してください。</p>
 
         <p class="mt-3">希望日</p>
         <div>
-            <input class="form-control w-50" name="date" maxlength="10" required>
+            <input class="form-control w-50" name="date" maxlength="10" placeholder="YYYY/MM/DD" required>
         </div>
 
         <p class="mt-3">コース内容</p>
@@ -63,9 +63,15 @@
             </label>
         </div>
 
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary">A</button>
+  <button type="button" class="btn btn-secondary">B</button>
+  <button type="button" class="btn btn-secondary">C</button>
+</div>
+
         <p class="mt-3">氏名</p>
         <div id="form-name">
-            <input type="text" class="form-control w-50 mt-1" name="name" maxlength="10" required>
+            <input type="text" class="form-control w-50 mt-1" name="name" maxlength="10" placeholder="名前を入力" required>
         </div>
 
         <input type="submit" class="mt-3 btn btn-primary w-25" value="送信">
