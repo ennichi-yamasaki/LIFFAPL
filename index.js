@@ -35,4 +35,10 @@ $(function () {
 
         return false;
     });
+
+
+    // 閉じる
+    $('form').close(function () {
+        $('#alert').show();
+    });
 });
