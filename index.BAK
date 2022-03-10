@@ -110,7 +110,8 @@ $(function() {
   });
 
   $('#btn-validate').click(function() {
-    Alert.warn(document.getElementById("form-name").value)
+    var date = $('input[name="date"]').val();
+    Alert.warn(document.getElementById(`${date}`)
   });
 });
 </script>
