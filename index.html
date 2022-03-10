@@ -96,18 +96,21 @@ $(function() {
       this.show($('#alert-warn'), msg);
     }
   }
+
   $('body').on('click', '.alert-close', function() {
    $(this).parents('.alert').hide();
   });
+
   $('#info').click(function() {
     Alert.info('This is infomation alert.')
   });
+
   $('#warn').click(function() {
     Alert.warn('This is warning alert.')
   });
 
   $('#btn-validate').click(function() {
-    Alert.warn('This is warning alert.')
+    Alert.warn(document.getElementById("form-name").value)
   });
 });
 </script>
