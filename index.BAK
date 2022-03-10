@@ -111,20 +111,20 @@ $(function() {
 
   $('#btn-validate').click(function() {
     var date = $('input[name="date"]').val();
-    if(date === null || date === undefined) { date = '' }
+    if(date === null || date === undefined) { date = ''; }
 
     var course = $("#form-course option:selected").text();
-    if(course === null || course === undefined) { course = '' }
+    if(course === null || course === undefined) { course = ''; }
 
     var number = $('input[name="number"]:checked').val();
-    if(number === null || number === undefined) { number = '' }
+    if(number === null || number === undefined) { number = ''; }
 
     var names = '';
     $('#form-name').children().each(function (i, elm) {
       names += $(elm).val() + '、';
     })
     names = names.slice(0, -1);
-    if(names === null || names === undefined) { names = '' }
+    if(names === null || names === undefined) { names = ''; }
 
     var msg = `[希望日]\n${date}\n[コース]\n${course}\n[人数]\n${number}\n[氏名]\n${names}`;
     
