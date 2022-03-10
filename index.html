@@ -110,7 +110,8 @@ $(function() {
   });
 
   $('#btn-validate').click(function() {
-    Alert.warn('This is warning alert.')
+    var course = $("#form-course option:selected").text();
+    Alert.warn(course)
   });
 });
 </script>
