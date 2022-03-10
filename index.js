@@ -34,33 +34,4 @@ $(function () {
         return false;
     });
 
-    $('#btn-validate').on('click', function(e) {
-        var targets = document.getElementsByClassName('reserve-form');
-        for (var i=0 ; i<targets.length ; i++) {
-            targets[i].onsubmit = function () {
-            var inputelements = this.querySelectorAll('input,textarea');
-            var alerts = this.getElementsByClassName('alertarea');
-            var ret = 0;
-
-            for (var j=0 ; j<alerts.length ; j++) {
-            if( inputelements[j].oninput ) {
-                inputelements[j].oninput();
-            }
-        }
-
-        for (var j=0 ; j<alerts.length ; j++) {
-            if( alerts[j].innerHTML.length > 0 ) {
-                ret++;
-            }
-        }
-
-        if( ret == 0 ) {
-            return true;
-        }
-        else {
-            alert( ret + "個のエラーがあります。");// ※警告用のダイアログボックスを表示したくないなら、この行は削除。
-            return false;
-        }
-    });
-
 });
